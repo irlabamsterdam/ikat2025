@@ -1,0 +1,55 @@
+{
+  "label": "ikat-fragment-v1",
+  "title": "Subtopic-level questions",
+  "questions": [
+    {
+      "question": "An engaging system actively encourages user to engage and explore a topic, using the right tools and interactions (e.g., asking follow-up questions and providing a high-level overview of a topic). To what extent does the system encourage the user to engage with it within this subtopic? What is the quality of the collaborative partnership within this subtopic?",
+      "id": "engagement",
+      "widget": "choice",
+      "orientation": "col",
+      "options": [
+        "True Collaborative Partner",
+        "Effective Collaborator",
+        "Functional Tool",
+        "Clumsy Assistant",
+        "Passive Obstacle"
+      ],
+      "help": "| Category                 | Description |\n|-------------------------|-------------|\n| True Collaborative Partner | • Feels like a proactive, intelligent, and helpful conversation partner, not just a tool. • Re-frames or deepens the topic in a helpful way. • Makes the user feel that what they say is synthesized and understood. • If the user provides a correction, immediately and perfectly incorporates the correction and demonstrates a complete understanding of why the correction was needed. |\n| Effective Collaborator   | • Interacts effectively to help the user but not beyond what the user asked it to do. • Moves the conversation forward. • Reliably accounts for the user's input in its next turn. • If the user provides a correction, immediately incorporates the correction, but not showing a complete understanding of why the correction was needed. |\n| Functional Tool          | • The interaction is functional but not truly collaborative. • It answers questions directly but as if it had said everything on the topic and had nothing further to add, thus not encouraging the user to engage more. • If the user provides a correction, acknowledges the feedback but applies it incompletely (e.g., fixes only a part of an error). |\n| Clumsy Assistant        | • The interaction feels clunky and disjointed. • If it provides help, it is too generic, ill-timed, or off-topic. • The user has to work hard to keep the conversation on track. • If the user provides a correction, acknowledges the feedback but does not really react to it, perhaps only making a trivial wording change. |\n| Passive Obstacle        | • The system is passive, obstructive, or creates conversational dead-ends. • It feels as if the user is interrogating the system to squeeze information out of it. • If the user provides a correction, ignores it completely. |\n"
+    },
+    {
+      "question": "Given the conversation history, user’s latest request, and user’s PTKB, how would you assess the relevance and usefulness of the generated response to the user’s request?",
+      "id": "relevance-and-usefulness",
+      "widget": "choice",
+      "orientation": "col",
+      "options": [
+        "Fully Meets",
+        "Highly meets",
+        "Moderately Meets",
+        "Slightly meets",
+        "Fails to meet"
+      ],
+      "help": "| Category        | Description |\n|-----------------|-------------|\n| Fully Meets     | The response is a ‘perfect’ response to the utterance. It contains a complete answer to the utterance and doesn’t contain anything extraneous. |\n| Highly Meets    | The response answers the utterance and is focused on the answer (i.e., what a system should deliver). |\n| Moderately Meets | The response answers the utterance to some extent, but focuses on other topics related to the request as well (i.e., it might initially be unclear why a system generated this answer but somehow contains the answer). |\n| Slightly Meets | The answer can be inferred from the generated response with reasonable effort (i.e., better than nothing). |\n| Fails to Meet  | Not relevant. No useful or relevant information is given. |\n"
+    },
+    {
+      "question": "Considering all factors (relevance, engagement, and other factors that were not covered by our questions), what is the overall quality and utility of the system's performance for this subtopic?",
+      "id": "overall-subtopic-quality",
+      "widget": "choice",
+      "orientation": "row",
+      "options": ["Exceptional", "Good", "Acceptable", "Poor", "Unacceptable"],
+      "help": "| Category     | Description |\n|-------------|-------------|\n| Exceptional | • The system's contribution to this subtopic was flawless: accurate, fully relevant, and highly collaborative. You cannot think of a better system.\n• It fully resolved this part of the user's information need. |\n| Good        | • The system's contribution was helpful and effective, despite minor flaws in one area (e.g., a slightly clumsy question).\n• It largely resolved this part of the need. |\n| Acceptable  | • The system provided some useful information, but the system exhibited some flaws (e.g., incompleteness, poor engagement).\n• A mixed bag. |\n| Poor        | • The system's contribution was mostly unhelpful due to major and significant flaws.\n• The small amount of useful information was outweighed by the negatives. |\n| Unacceptable | • The system's contribution to this subtopic was useless, irrelevant, or counter-productive.\n• It failed completely on this part of the task. |\n"
+    },
+    {
+      "question": "What aspect(s) of this interaction made the strongest impact on your overall rating?",
+      "id": "subtopic-justification",
+      "widget": "text"
+    },
+    {
+      "question": "How confident are you in the scores you provided for this subtopic?",
+      "id": "rater-confidence",
+      "widget": "choice",
+      "orientation": "row",
+      "options": ["High confidence", "Medium confidence", "Low confidence"],
+      "help": "- **High Confidence:** The interaction was clear and my scores felt unambiguous.\n- **Medium Confidence:** The interaction had some ambiguity that required significant interpretation.\n- **Low Confidence:** The interaction was very confusing, making it difficult to apply the rubric with certainty."
+    }
+  ]
+}

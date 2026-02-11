@@ -1,0 +1,90 @@
+{
+  "label": "ikat-dialog-v1",
+  "title": "Dialog-level Questions",
+  "questions": [
+    {
+      "question": "An effective proactive system employs a variety of strategies while interacting with the user, e.g., it asks clarifying questions, or tries to elicit the user’s preference by asking questions and would ask follow-up questions to make user more engaged in the dialogue. How well does the system employ a portfolio of different proactive actions (e.g., asking clarifying questions, asking follow-up questions, asking for feedback, etc.) throughout the conversation?",
+      "id": "mixed-initiative-strategies",
+      "widget": "choice",
+      "orientation": "col",
+      "options": [
+        "Masterful & Adaptive",
+        "Competent & Proactive",
+        "Limited but Functional",
+        "Attempted but Flawed",
+        "Purely Reactive"
+      ],
+      "help": "| Category | Description |\n| --- | --- |\n| Masterful & Adaptive | • Deploys the right proactive strategy (asking the user to clarify, eliciting preferences proactively, offering alternatives, suggesting what to ask next, etc.) at the right time. • Adapts its approach to the user and conversation as the conversation evolves. • Uses a set of proactive actions that help the user reach their goal more effectively. |\n| Competent & Proactive | • Effectively uses a few strategies, or a variety of them with minor timing issues.• The system is clearly proactive and makes a consistent effort to guide the conversation. |\n| Limited but Functional | • The system is mostly reactive (e.g., only answers to the user’s questions) with one or two notable exceptions in which the system applied a strategy effectively. • In some cases, it tries to use some strategies but not as effectively (e.g., it tries to ask a clarifying question, but the user already provided the requested information). • It chooses to always do a proactive action (e.g., ask clarifying questions) even though there is clearly no need for them to be asked. |\n| Attempted but Flawed | • Attempts to use a strategy, but the execution is poor (e.g., asks a confusing question).• The attempt is visible but not helpful and may hinder the conversation. |\n| Purely Reactive | • The system provides only answers and is passive. • It never asks a question, elicits a preference, or suggests a next step. |"
+    },
+    {
+      "question": "An effective personalized system should appropriately tailor its responses to the user persona when necessary. The personalization aspects have two dimensions: style and content. Style refers to the tone, detail and vocabulary that is familiar to the user, while content refers to understanding the user’s interest and constraints while providing the answer (e.g., if the user is vegan, avoid suggesting cow’s milk to them). How well does the system tailor the dialogue to the specific user persona provided?",
+      "id": "personalization",
+      "widget": "choice",
+      "orientation": "col",
+      "options": [
+        "Deeply Personalized",
+        "Successfully Personalized",
+        "Superficially Personalized",
+        "Incorrectly Personalized",
+        "Entirely Generic"
+      ],
+      "help": "| Category                | Description |\n|-------------------------|-------------|\n| Deeply Personalized     | • Consistently and accurately tailors responses to the user persona throughout. • Remembers and applies user preferences and constraints (e.g., budget, diet, interests). • The tone, vocabulary, and level of detail are perfectly matched to the persona. • Explicitly references the persona in responses to enhance relevance (e.g., “Because you’re vegan, I’m recommending …”). |\n| Successfully Personalized | • Clearly attempts to personalize responses for the user persona. • The responses are highly personalized, but may not explicitly reference the persona in every instance. • May occasionally overlook a minor preference or apply a constraint inconsistently once, but overall demonstrates helpful and intentional personalization. |\n| Superficially Personalized | • Mentions a persona constraint at least once, but fails to consistently apply it in subsequent responses. • The personalization is present but unreliable and feels \"tacked on.\" • Lacks a coherent strategy for personalization, leading to largely generic suggestions. |\n| Incorrectly Personalized | • Provides suggestions that directly contradict the persona's stated preferences or constraints (e.g., suggesting an expensive option to a budget user). • Attempts at personalization are counterproductive, making the response less relevant or helpful. |\n| Entirely Generic  | • Provides generic responses with no awareness of the user persona, even when constraints are explicitly mentioned in the dialogue. |\n",
+
+    },
+    {
+      "question": "An effective information flow refers to a reasonable information rate while providing the response to the user. An effective system would try to scaffold the information and provide the response in hierarchical order (i.e., start with high-level concepts and then go in more detail with the more specific aspects of the topic). It would also try to adapt the information rate to the user’s understanding of the topic, i.e., to avoid throwing a lot of information to the user all at once. Moreover, the system should avoid unnecessary verbosity, contradiction, repetition, and abrupt topic shifts in different turns. How well does the informative part of the conversation flow?",
+      "id": "information-flow-and-coherence",
+      "widget": "choice",
+      "orientation": "col",
+      "options": [
+        "Seamless & Logical",
+        "Coherent with Minor Flaws",
+        "Functional but Clunky",
+        "Disjointed & Confusing",
+        "Incoherent"
+      ],
+      "help": "| Category                | Description |\n|-------------------------|-------------|\n| Seamless & Logical      | • The dialogue is perfectly coherent and exceptionally easy to follow. • The system scaffolds the complex information into multiple digestible steps. • It remembers context and user history flawlessly across all turns. • Transitions between subtopics are smooth and well-motivated. |\n| Coherent with Minor Flaws | • The conversation is largely coherent. • The system attempts to do scaffolding but it’s not doing it perfectly. • It may briefly forget a minor detail but quickly gets back on track. • One transition between topics might feel slightly abrupt, but doesn't break the dialogue. |\n| Functional but Clunky   | • The dialogue is generally understandable but has noticeable flaws. • The system’s attempt to scaffolding is unsuccessful. • The system ‍or requires the user to periodically remind it of context. • You can follow it, but it requires effort. |\n| Disjointed & Confusing  | • The conversation is hard to follow due to frequent contradictions or contextual \"amnesia.\" • The system jumps between topics illogically. |\n| Incoherent              | • The dialogue is nonsensical. Each turn feels disconnected from the last. • Contextual memory is effectively zero, making a productive conversation impossible. |\n"
+    },
+    {
+      "question": "After examining the whole dialog, how likely would you be to believe that past and future answers of this system are factually correct? A trustworthy system is transparent about its source of knowledge (e.g., where was conveyed knowledge obtained from), refer to domain expert on sensible topics (e.g., physicians on medical topics), and transports appropriate levels of confidence. Please also consider other factors that contribute to your perceived trustworthiness in your rating. As a holistic judgment, how reliable, responsible, and honest is the system?",
+      "id": "trustworthiness",
+      "widget": "choice",
+      "orientation": "row",
+      "options": [
+        "Exemplary",
+        "Reliable",
+        "Inconsistent",
+        "Unreliable",
+        "Actively Misleading"
+      ],
+      "help": "| Category          | Description |\n|-------------------|-------------|\n| Exemplary         | • Fully transparent about where the knowledge was obtained from. • Proactively refers to domain experts or refuses to answer on sensible topics (e.g., medical, financial). • Explicitly acknowledges when it cannot find information or has low confidence. |\n| Reliable          | • Mostly transparent about where the knowledge was obtained from. • May not refer to domain experts but does not give potentially harmful advice on sensible topics (e.g., medical, financial). |\n| Inconsistent      | • Untransparent about where the knowledge was obtained from. • May not refer to domain experts but does not give potentially harmful advice on sensible topics (e.g., medical, financial). • No obvious factually incorrect claim. |\n| Unreliable        | • Untransparent about where the knowledge was obtained from. • May not refer to domain experts but does not give potentially harmful advice on sensible topics (e.g., medical, financial). • Contains at least one factually incorrect or unverifiable claim. |\n| Actively Misleading | • Untransparent about where the knowledge was obtained from. • Provides potentially harmful advice on sensible topics (e.g., medical, financial). • Contains multiple factually incorrect or unverifiable claims. |\n"
+    },
+    {
+      "question": "Considering the entire dialogue, how satisfied would you be as the user and how successful was the interaction? Would you use this system yourself? Bear in mind that the current user is a simulated user, and therefore its language might not reflect actual user satisfaction and system performance (e.g., “Thank you very much for your great answer”).",
+      "id": "overall-user-satisfaction",
+      "widget": "choice",
+      "orientation": "col",
+      "options": [
+        "Task Perfected",
+        "Task Accomplished",
+        "Task Partially Met",
+        "Task Failed",
+        "Task Undermined"
+      ],
+      "help": "| Category         | Description |\n|------------------|-------------|\n| Task Perfected   | • The user's information goal was fully met, and the process was efficient and enjoyable. • The system may have provided additional, serendipitously useful information, that the user wouldn’t have thought of but that helped him understand his/her own need. • The conversation is unambiguous and an exemplary success. |\n| Task Accomplished | • The user's primary goal was clearly met. You would be satisfied as a user and re-use the system. • The interaction was helpful and positive, despite minor inefficiencies along the way. |\n| Task Partially Met | • The user got some useful information, but the overall goal was not fully met. • The process may have been unnecessarily complex but was not a complete failure. |\n| Task Failed      | • The user's primary goal was not met. • The interaction was frustrating, confusing, or misleading. The user would need to start over elsewhere. |\n| Task Undermined  | • The system was completely useless or counter-productive. • It wasted the user's time or left them more confused than when they started. |\n"
+    },
+    {
+      "question": "What aspect(s) of the dialog made the strongest impact on your overall rating?",
+      "id": "dialog-justification",
+      "widget": "text"
+    },
+    {
+      "question": "How confident are you in the scores you provided for this entire dialogue?",
+      "id": "rater-confidence",
+      "widget": "choice",
+      "orientation": "row",
+      "options": ["High confidence", "Medium confidence", "Low confidence"],
+      "help": "- **High Confidence:** The dialogue's quality was clear and the rubric was easy to apply.\n- **Medium Confidence:** The dialogue had significant ambiguity that required subjective interpretation.\n- **Low Confidence:** The dialogue was highly confusing or incoherent, making it very difficult to apply the rubric with certainty."
+    }
+  ]
+}
