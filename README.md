@@ -43,6 +43,8 @@ Resources for **offline (Cranfield-style) test collection evaluation**.
 #### PTKB (Persona) Relevance
 
 - `ptkb/qrels-ptkb-nist.trec`: PTKB relevance labels in TREC format from NIST assessors.
+- `ptkb-relevance-organizers.trec`: PTKB relevance labels in TREC format from organizers.
+- `ptkb-update.json`: PTKB stataments extracted from previous user conversation + their relevance to the current conversation turns.
 
 #### Passage Relevance (Qrels)
 
