@@ -59,6 +59,10 @@ Relevance scale (TREC style):
 - 3: Highly meets
 - 4: Fully meets
 
+#### Index and collection
+
+The collection of iKAT 2025 dataset is the same as iKAT 2024 and 2023. 
+
 
 #### `offline/runs/`
 
