@@ -37,7 +37,7 @@ Resources for **offline (Cranfield-style) test collection evaluation**.
 
 - `nuggets/nuggets-nist.json`: 2,241 human-extracted gold nuggets.
 
-- `nuggets/nuggets-LLM.json`: 8,607 LLM-extracted nuggets.
+- `nuggets/nuggets-LLM.json`: 8,607 LLM-extracted nuggets (GPT-4.1).
 
 
 #### PTKB (Persona) Relevance
@@ -50,7 +50,7 @@ Resources for **offline (Cranfield-style) test collection evaluation**.
 
 - `qrel/qrels-nist.trec`: 5,650 NIST-judged query-passage pairs (scale 0–4).
 
-- `qrel/qrels-llm.txt`: 38,809 LLM-based passage relevance judgments.
+- `qrel/qrels-llm.txt`: 38,809 LLM-based passage relevance judgments (GPT-4.1).
 
 Relevance scale (TREC style):
 - 0: Fails to meet
